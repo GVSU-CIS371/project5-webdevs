@@ -15,18 +15,16 @@
 
 <script lang="ts" setup>
   import { useProductStore } from '../stores/ProductStore';
-  import { onMounted } from 'vue';
+  //import { onMounted } from 'vue';
   import StoreItem from "./StoreItem.vue";
   
   const productStore = useProductStore();
-  onMounted(() => {
-    productStore.init();
-    console.log(productStore.products);
-  });
+  productStore.init();
+    
   
   
   //productStore.init();
-  console.log(productStore.products);
+  //console.log(productStore.products);
 
   
 </script>
