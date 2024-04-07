@@ -1,18 +1,13 @@
 <template>
   <v-container>
-    <v-row>
-      <v-col>
-        Testing
-      </v-col>
-    </v-row>
-    <v-row>
+    <v-row align="stretch">
       <v-col
         v-for="(product, index) in productStore.products"
         :key="index"
         cols="12"
         md="4"
       >
-        <StoreItem :product="product"></StoreItem>
+        <StoreItem :product="product" class="fill-height"></StoreItem>
       </v-col>
     </v-row>
   </v-container>
