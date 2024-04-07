@@ -2,19 +2,21 @@
   <v-card
     variant="outlined"
     hover
-    :title="props.product.name"
+    :title="product.name"
 
   >
   </v-card>
 </template>
 
 <script lang="ts" setup>
-import { Product } from "../types/product";
+import { ProductDoc } from "../types/product";
 
 type Props = {
-  product: Product;
+  product: ProductDoc;
 }
 const props = defineProps<Props>();
+const product = props.product.data;
+console.log(product);
 
 
 </script>
