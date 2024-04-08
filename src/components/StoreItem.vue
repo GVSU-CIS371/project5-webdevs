@@ -1,10 +1,7 @@
 <template>
   <v-card
-    variant="outlined"
     hover
-    
     :title="product.name"
-    
     :text="product.description"
     :prepend-avatar="product.image"
   >
